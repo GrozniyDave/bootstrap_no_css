@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <title>ToDo||list</title>
+  </head>
+  <header>
+      <div class="container">
+          <nav class="nav nav-pills flex-column flex-sm-row">
+              <a class="flex-sm-fill text-sm-center nav-link  active" href="index.html">Home</a>
+              <a class="flex-sm-fill text-sm-center nav-link btn btn-outline-info" href="about.html">About</a>
+            </nav>
+      </div>
+    </header>
+  <body>
+    <div class="container">
+      <div>
+        <form>
+          <div class="form-group">
+            <h1 class="text-center">The Ultimate List</h1>
+            <!-- title -->
+            <label for="title">Title</label>
+            <input
+              class="form-control"
+              type="text"
+              id="exampleFormControlInput1"
+              name="title"
+              required
+              minlength="3"
+              maxlength="50"
+              placeholder="Your task's name"
+            />
+          </div>
+          <!-- description -->
+          <div class="form-group">
+            <label for="description">Description</label
+            ><textarea
+              class="form-control"
+              name="description"
+              cols="40"
+              rows="5"
+              id="exampleFormControlInput1"
+              name="description"
+              required
+              minlength="1"
+              placeholder="Maybe some details?"
+            ></textarea>
+          </div>
+          <!-- hint -->
+          <div class="form-group">
+            <label for="hint">Hint</label>
+            <input
+              class="form-control"
+              type="text"
+              id="exampleFormControlInput1"
+              name="hint"
+              required
+              minlength="1"
+              placeholder="Anything that can help you?"
+            />
+          </div>
+          <!-- goal -->
+          <div class="form-group">
+            <label for="goal">Goal</label>
+            <input
+              class="form-control"
+              type="text"
+              id="exampleFormControlInput1"
+              name="goal"
+              required
+              minlength="10"
+              placeholder="What's your goal?"
+            />
+          </div>
+          <!-- SUBMIT BUTTON -->
+          <button
+            type="submit"
+            name="submit"
+            class="btn btn-outline-primary btn-lg"
+          >
+            Add task &#x2b;
+          </button>
+        </form>
+      </div>
+
+      <div>
+        <main>
+          <template>
+            <article class="border border-primary text-center">
+              <h1>title</h1>
+              <p>description</p>
+              <h2>hint</h2>
+              <h3>goal</h3>
+              <button class="remove">Done&#10004;</button>
+            </article>
+          </template>
+        </main>
+      </div>
+
+    <script src="js.js"></script>
+  </body>
+  <footer>
+    <div class="alert alert-primary" role="alert">
+      <span class="badge badge-primary">This</span>
+      <span class="badge badge-secondary">website</span>
+      <span class="badge badge-success">is</span>
+      <span class="badge badge-danger">built</span>
+      <span class="badge badge-warning">with</span>
+      <span class="badge badge-info">a</span>
+      <span class="badge badge-light">Bootstrap</span>
+      <span class="badge badge-dark">framework</span>
+    </div>
+  </footer>
+</div>
+</html>
